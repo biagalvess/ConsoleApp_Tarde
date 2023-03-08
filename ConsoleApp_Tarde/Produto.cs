@@ -20,6 +20,18 @@ namespace ConsoleApp_Tarde
 
         }
 
+        public int getId()
+        { 
+            return Id; 
+        }
+        public string getDescricao()
+        {   
+            return Descricao; 
+        }
+        public decimal getValor()
+        {
+            return Valor;
+        }
     }
 
 }
