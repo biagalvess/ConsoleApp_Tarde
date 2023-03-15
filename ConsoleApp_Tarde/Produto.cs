@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,11 @@ namespace ConsoleApp_Tarde
             Descricao = descricao;
             Valor = valor;
 
+        }
+
+        public string ExibirDados()
+        {
+            return "Descrição" + Descricao + "R$" + Valor;
         }
 
         public int getId()

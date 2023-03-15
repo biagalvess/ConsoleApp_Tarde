@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ConsoleApp_Tarde;
 using ConsoleApp_Tarde.Heranca;
+using System;
 
 Console.WriteLine("Hello, World!");
 
@@ -58,10 +59,46 @@ veiculoLista.Add(bicicleta);
 foreach (var item in veiculoLista)
 {
     Console.WriteLine(item.ExibirDados());
-
 }
 
 Console.WriteLine("Qtd itens da lista" + veiculoLista.Count);
+
+//Crie duas listas 
+//Uma lista de produtos com 400 produtos 
+//Outra lista de clientes com 250 clientes 
+
+Random rand = new Random();
+
+List<Produto> produtoLista = new List<Produto>();
+
+for ( int i = 0; i < rand.Next (200,500); i++)
+{
+    Produto p = new Produto( 1, "Produto" + i, i / 2 * 15) ;
+    produtoLista.Add(p);
+
+
+}
+
+foreach (var item in produtoLista)
+{
+    Console.WriteLine(item.ExibirDados());
+}
+
+List<Cliente> clientesLista = new List<Cliente>();
+
+for (int i = 0; i <= 250; i++)
+
+{   
+    Cliente c = new Cliente(i, "Cliente", "996241399", e1);
+    clientesLista.Add(c);
+
+}
+
+foreach (var item in clientesLista)
+{
+    Console.WriteLine(item.ExibirDados());
+}
+
 
 
 
