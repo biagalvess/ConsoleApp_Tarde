@@ -50,3 +50,19 @@ aviao.quantidadaRodas = 12;
 aviao.quantidadeAcentos = 300;
 aviao.TemMotor = true;
 
+List<Veiculo> veiculoLista = new List<Veiculo>();
+veiculoLista.Add(car);
+veiculoLista.Add(aviao);
+veiculoLista.Add(bicicleta);
+
+foreach (var item in veiculoLista)
+{
+    Console.WriteLine(item.ExibirDados());
+
+}
+
+Console.WriteLine("Qtd itens da lista" + veiculoLista.Count);
+
+
+
+
