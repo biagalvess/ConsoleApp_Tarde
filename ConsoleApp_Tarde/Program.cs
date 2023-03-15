@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ConsoleApp_Tarde;
+using ConsoleApp_Tarde.Heranca;
 
 Console.WriteLine("Hello, World!");
 
@@ -17,10 +18,10 @@ Console.WriteLine(p1.getValor() + "  " + p1.getValor());
 Endereco e1 = new Endereco(
  1,
  15991 - 251,
- "Av. Joao ANtonio Marques",
- "Cadioli",
+ "Rua Hamilton Bastia",
+ "Nova Matao",
  "Matao",
- 192
+ 671
  ); 
 
 Cliente c1 = new Cliente(1, "Ana", "997706690", e1);
@@ -29,3 +30,23 @@ c1.getEndereco().setRua("Prudente de Morais");
 Console.WriteLine(c1.getEndereco().EnderecoCompleto());
 c1.getEndereco().AtualizarEndereco("Julio de Moraes", 585, "Presidente Arouca");
 Console.WriteLine(c1.getEndereco().EnderecoCompleto());
+
+Carro car = new Carro();
+car.cor = "Vermelho";
+car.quantidadaRodas = 4;
+car.quantidadeAcentos = 5;
+car.TemMotor = true;
+
+Bike bicicleta = new Bike();
+bicicleta.cor ="Azul";
+bicicleta.quantidadaRodas = 2;
+bicicleta.quantidadeAcentos = 1;
+bicicleta.TemMotor = false;
+
+
+Aviao aviao = new Aviao();
+aviao.cor = "Branco";
+aviao.quantidadaRodas = 12;
+aviao.quantidadeAcentos = 300;
+aviao.TemMotor = true;
+
