@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp_Tarde.Heranca
 {
-    internal class Aviao
+    public class Aviao : Veiculo 
+
     {
     }
 }

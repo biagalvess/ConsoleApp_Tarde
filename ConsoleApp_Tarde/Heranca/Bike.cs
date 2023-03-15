@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp_Tarde.Heranca
 {
-    internal class Bike
+    internal class Bike : Veiculo 
     {
+
+
     }
 }
