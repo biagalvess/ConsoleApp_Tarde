@@ -13,3 +13,19 @@ p1.setValor(29.90M);
 p1.setDescricao("Mouse Razer");
 
 Console.WriteLine(p1.getValor() + "  " + p1.getValor());
+
+Endereco e1 = new Endereco(
+ 1,
+ 15991 - 251,
+ "Av. Joao ANtonio Marques",
+ "Cadioli",
+ "Matao",
+ 192
+ ); 
+
+Cliente c1 = new Cliente(1, "Ana", "997706690", e1);
+Cliente c2 = new Cliente(2, "Maria", "992168421", e1); Console.WriteLine(c1.getEndereco().EnderecoCompleto());
+c1.getEndereco().setRua("Prudente de Morais");
+Console.WriteLine(c1.getEndereco().EnderecoCompleto());
+c1.getEndereco().AtualizarEndereco("Julio de Moraes", 585, "Presidente Arouca");
+Console.WriteLine(c1.getEndereco().EnderecoCompleto());
